@@ -1,0 +1,140 @@
+/* Shared "Succession Register" design system — used by Wills (the site
+   homepage) and the Form/Epoa/Probate pages so they read as one site rather
+   than separate styles per page. */
+
+.sr-wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.sr-masthead-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.sr-title { margin: 0 0 0.25rem; }
+.sr-kicker { color: #555; max-width: 40ch; }
+
+.sr-file-ref {
+  font-size: 0.85rem;
+  color: #777;
+  text-align: right;
+}
+.sr-file-ref .sr-num {
+  display: block;
+  font-weight: 600;
+  color: #222;
+}
+
+.sr-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  border-bottom: 1px solid #ddd;
+  margin: 1.5rem 0 1rem;
+}
+.sr-tab {
+  background: none;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  font: inherit;
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+.sr-tab.active {
+  border-bottom-color: #222;
+  font-weight: 600;
+}
+
+.sr-panel { padding: 0.5rem 0; }
+.sr-lede { color: #444; max-width: 65ch; }
+.sr-note-line { color: #666; font-size: 0.9rem; }
+
+.sr-steps { padding-left: 1.25rem; }
+.sr-step-title { font-weight: 600; }
+.sr-step-desc { color: #666; font-size: 0.9rem; }
+
+.sr-btn {
+  background: #222;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+.sr-btn-ghost {
+  background: none;
+  color: #222;
+  border: 1px solid #ccc;
+}
+
+.sr-field { margin-bottom: 1rem; }
+.sr-field label { display: block; margin-bottom: 0.25rem; }
+.sr-field input, .sr-field select {
+  width: 100%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.sr-juris-grid { display: grid; gap: 1rem; }
+.sr-juris-note { background: #f6f6f6; padding: 0.75rem; border-radius: 4px; }
+
+.sr-res-list { list-style: none; padding: 0; }
+.sr-res-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #eee;
+}
+.sr-res-title { font-weight: 600; }
+.sr-res-desc { color: #666; font-size: 0.9rem; }
+.sr-res-tag {
+  font-size: 0.75rem;
+  color: #666;
+  border: 1px solid #ddd;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  height: fit-content;
+}
+
+.sr-back-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #555;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+.sr-back-link:hover { text-decoration: underline; }
+
+.sr-def-list {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.35rem 1.25rem;
+  margin: 1rem 0;
+}
+.sr-def-list dt { font-weight: 600; }
+.sr-def-list dd { margin: 0; color: #444; }
+
+.sr-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+  color: #888;
+  font-size: 0.8rem;
+  flex-wrap: wrap;
+}
